@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="CSS/bootstrap.css" rel="stylesheet">
+  <script src="JS/bootstrap.js"></script>
+  <link href="CSS/all.css" rel="stylesheet"/>
+  <title> Nature's Blog</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Nature's Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contect.html">Contect</a>
+        </li>
+        <li class="nav-item active"   data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <a class="nav-link">SignUp</a>
+        </li>
+        <li class="nav-item  active"   data-bs-toggle="modal" data-bs-target="#loginModal">
+          <a class="nav-link">Login</a>
+        </li>
+      </ul>
+
+     <!--signup modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+   <div class="mb-3">
+    <label for="exampleInputUsername" class="form-label">Username</label>
+    <input type="text" class="form-control" id="exampleInputUsername">
+  </div>      
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!--signup modal end-->
+<!--login modal-->
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="mb-3">
+    <label for="loginInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="loginInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="loginInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="loginCheck1">
+    <label class="form-check-label" for="loginCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!--login nd-->
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container p-3 ms-5">
+  <form class="px-5">
+  <fieldset class="px-5 ms-5">
+    <legend >Contect Us</legend>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Name</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Enter Name">
+    </div>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Email</label>
+      <input type="email" id="disabledTextInput" class="form-control" placeholder="Enter email">
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Select Query</label>
+      <select id="disabledSelect" class="form-select">
+        <option>Events</option>
+        <option>Natural</option>
+        <option>History</option>
+        
+      </select>
+       <div class="form-check pt-1">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+    </div>
+    <div class="mb-3">
+      
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+</div>
+<div class="container px-5 mx-5">
+  <p class="px-5 mx-5">© 2017–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+</div>
+</body>
+</html>
